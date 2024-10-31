@@ -89,6 +89,24 @@ a {
 
 
 /* scroll-spy ani */
+.back-to-position {
+    opacity: 0;
+    transition: 1s;
+}
+
+.back-to-position.to-right {
+    transform: translateX(-150px);
+}
+
+.back-to-position.to-left {
+    transform: translateX(150px);
+}
+
+.show .back-to-position {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 
 
@@ -870,7 +888,9 @@ header .badge {
 
 
 
-
+.aaa {
+    height: 500px;
+}
 
 
 
