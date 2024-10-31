@@ -19,6 +19,7 @@ searchInputEl.addEventListener('blur', function() {
 
 
 
+
 // badge scroll
 const badgeEl = document.querySelector('header .badges')
 
