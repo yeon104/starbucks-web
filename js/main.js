@@ -32,14 +32,35 @@ window.addEventListener('scroll', _.throttle(function() {
             opacity: 0,
             display: 'none'
         })
+        // 하단 to-top 버튼 보이기
+        gsap.to('#to-top', .2, { 
+            x: 0,
+        })
+
     } else {
         // 배지 표시
         gsap.to(badgeEl, .6,{
             opacity: 1,
             display: 'block'
     })
+            // 하단 to-top 버튼 숨기기
+        gsap.to('#to-top', .2, { 
+            x: 100,
+        })
     }
 }, 300))  // _.throttle (함수, 시간)
+
+
+
+// 하단 to-top 동작
+const toTopEl = document.querySelector('#to-top')
+toTopEl.addEventListener('click', function() {
+    gsap.to(window, .8, {
+        scrollTo: 0,
+    })
+})
+
+
 
 
 
@@ -168,4 +189,8 @@ spyEls.forEach(function (spyEl) {
 
 
 
+
+// 올해 년도 구하기
+const thisYear = document.querySelector('.this-year')
+thisYear.textContent = new Date().getFullYear()
 

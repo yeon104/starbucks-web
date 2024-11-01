@@ -630,9 +630,6 @@ header .badge {
     right: 0;
 }
 
-.rewards .btn-group .btn.sign-up {    
-
-}
 .rewards .btn-group .btn.sign-in {    
     width: 110px;
     margin-left: 10px;
@@ -1054,7 +1051,22 @@ footer .logo {
     margin: 30px auto;
 }
 
-
+#to-top {
+    width: 42px;
+    height: 42px;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 30px;
+    bottom: 30px;
+    position: fixed;
+    z-index: 5;
+}
 
 
 
