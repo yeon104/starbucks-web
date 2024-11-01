@@ -107,6 +107,24 @@ a {
     transform: translateY(0);
 }
 
+.show .back-to-position.delay-0 {
+    transition-delay: 0s;
+}
+.show .back-to-position.delay-1 {
+    transition-delay: .3s;
+}
+.show .back-to-position.delay-2 {
+    transition-delay: .6s;
+}
+.show .back-to-position.delay-3 {
+    transition-delay: .9s;
+}
+
+
+
+
+
+
 
 
 
@@ -892,6 +910,149 @@ header .badge {
     height: 500px;
 }
 
+
+
+/* awards */
+.awards {
+    background-color: #272727;
+    
+}
+
+.awards .inner {
+    padding: 40px 0;
+}
+
+.awards .swiper {
+    width: 100%;
+    height: 40px;
+}
+
+.awards .swiper-button-prev,
+.awards .swiper-button-next {
+    width: 42px;
+    height: 42px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    outline: none;
+    color: #fff;
+    opacity: .4;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.awards .swiper-button-prev::after,
+.awards .swiper-button-next::after {
+    content: '';
+}
+
+.awards .swiper-button-prev {
+    left: -70px;
+}
+
+.awards .swiper-button-next {
+    right: -60px;
+}
+
+.awards .swiper-button-prev:hover,
+.awards .swiper-button-next:hover {
+    background-color: #ffffff;
+    color: #333;
+    transition: .4s;
+}
+
+
+
+/* footer */
+footer {
+    background-color: #272727;
+    border-top: 1px solid #333;
+}
+
+footer .inner {
+    padding: 40px 0 60px 0;
+}
+
+footer .menu {
+    display: flex;
+    justify-content: center;
+}
+
+footer .menu li {
+    position: relative;
+}
+
+footer .menu li::before {
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #818181;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+footer .menu li:first-child::before {
+    display: none;
+}
+
+footer .menu li a {
+    color: #ccc;
+    font-size: 12px;
+    font-weight: 570;
+    padding: 15px;
+    display: block;
+}
+
+footer .menu li a.green {
+    color: #669900;
+}
+
+footer .btn-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+footer .btn-group .btn {
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 10px;
+    opacity: .7;
+}
+
+footer .btn-group .btn:last-child {
+    margin-right: 0;
+}
+
+footer .info {
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer .info span {
+    font-size: 12px;
+    margin-right: 20px;
+    color: #777;
+}
+
+footer .info span:last-child {
+    margin-right: 0;
+}
+
+footer .copyright {
+    font-size: 12px;
+    color: #818181;
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer .logo {
+    margin: 30px auto;
+}
 
 
 
